@@ -35,6 +35,9 @@ body{
     width: 44px;
     z-index: 1000;
 }
+.navbar-default{
+    background: #fff;
+}
 /* Responsive */
 @media (min-width: 768px){
     .navbar .navbar-nav {
@@ -48,40 +51,29 @@ body{
     .contact {
         background: url('../images/bg_lienhe.png') no-repeat center top 5px;
     }
-    .affix li {
-        border-right: 1px dotted #fff;
-    }
     .navbar {
       border: 0;
       border-radius: 0px;
   }
-/*.call{
-    display: none;
-    }*/
-    .navbar{
-        transition: 0.3s;
-    }
-    .navbar-nav {
-    margin: 7.5px -15px !important;
+  .navbar-nav>li>a{
+      padding:17px 10px !important;
+  }
+  .navbar{
+    padding: 10px 0;
+    transition: 0.3s;
 }
-    .affix {
-        z-index: 9;
-        top: 0;
-        width: 100%;
-        background: rgba(5, 86, 153, 0.8);
-        /*background: #167AC6;*/
-        box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
-    }
+.affix {
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    background: rgba(5, 86, 153, 0.8);
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
+}
 
-    .affix .navbar-nav>li>a{
-        color: #fff !important;
-    }
+.affix .navbar-nav>li>a{
+    color: #fff !important;
+    font-size: 14px;
 }
-@media (min-width: 1200px)
-{
-    .container {
-        width: 1250px;
-    }
 }
 @media (max-width: 768px){
     .affix{
@@ -116,23 +108,37 @@ body{
         background: #fff;
     }
 }
-.call{
+.call {
+    z-index: 99999999999;
     position: fixed;
-    bottom: 0;
-    /*width: 100%;*/
+    bottom: 30px;
+    left: 10px;
+    width: 150px;
+    background: #FF3838;
+    height: 40px;
+    border-radius: 25px;
+    /* border: 1px solid #fff; */
+    position: fixed;
+    bottom: 10px;
     text-align: center;
     z-index: 20;
 }
 .callimages {
+    display: block;
+    width: 150px;
     cursor: pointer;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
     font-size: 14px;
-    background-color: #E41111;
-    opacity: .8;
-    width: 170px;
+    line-height: 24px;
+    background: url(http://fet.com.vn/wp-content/uploads/2017/03/phone.png) no-repeat left 8px center;
     margin: auto;
     border-radius: 5px 5px 0 0;
-    padding: 10px 0 5px;
+    padding: 10px 0 5px 20px;
     z-index: 1000!important;
+    opacity: .8;
 }
 .call .callimages span a {
     color: #fff;
@@ -141,7 +147,7 @@ body{
 .header-top{
     padding: 5px 0;
     /*background: rgba(0, 0, 0, 0.8);*/
-    background: #101010;
+    background: #EDEDED;
 }
 .fl{
     float: left;
@@ -237,25 +243,22 @@ body{
 .slider > .slick-dots {
     bottom: 5px;
 }
-    .search-form{
-        margin-bottom: 20px;
-    }
-    .featured-block, .slider{
-       margin-bottom: 35px;
-   }
-   .slick-slide img{
-       margin:0 auto;
-   }
-   .w100{
-       width: 100%;
-   }
-   .nav>li>a{
+.search-form{
+    margin-bottom: 20px;
+}
+.featured-block, .slider{
+   margin-bottom: 35px;
+}
+.slick-slide img{
+   margin:0 auto;
+}
+.w100{
+   width: 100%;
+}
+.nav>li>a{
     font-size: 15px;
+    font-weight: bold;
     text-transform: uppercase;
-    -webkit-transition: background 0.2s;
-    -moz-transition: background 0.2s;
-    -ms-transition: background 0.2s;
-    -o-transition: background 0.2s;
     transition: background 0.2s;
     border-bottom: 2px solid transparent;
 }
@@ -294,7 +297,7 @@ body{
 }
 .subcat h2{
    display: inline-block;
-   background-color: #d63240;
+   background-color: #427FED;
    line-height: 40px;
    color: #fff;
    padding-right: 20px;
@@ -394,6 +397,7 @@ body{
     font-size: 16px;
     float: left;
     margin-bottom: 10px;
+    font-weight: bold;
     width: 100%;
 }
 .location {
@@ -419,22 +423,22 @@ body{
 }
 .subcat .btn {
     margin: 6px 15px 0 0;
-    background-color: #d63240;
+    background-color: #427FED;
     border: none;
 }
 .navbar-nav>.active>a, .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-   color: #fff !important;
-   background: #d63240 !important;
+   color: #D63240 !important;
+   background: transparent !important;
 }
 .navbar-default .navbar-nav>li>a{
-    color: #fff;
+    color: #274fa2;
 }
 .ew_heading {
     margin-top: 0;
     padding: 5px 0px;
     color: #fff;
     line-height: 26px;
-    background: #d63240;
+    background: #427FED;
     border-radius: 3px;
     margin-bottom: 5px;
     position: relative;
@@ -500,8 +504,10 @@ aside{
 #footer-wrapper {
     float: left;
     width: 100%;
+    /*margin-top: 30px;*/
     padding-top: 20px;
-    background: #055699 url('../images/banner3.jpg') no-repeat center center;
+    /*background: #055699 url('../images/banner3.jpg') no-repeat center center;*/
+    background: #206096;
     color: #fff;
     background-size: cover;
     position: relative;
@@ -510,7 +516,7 @@ aside{
     float: left;
     width: 100%;
     padding: 5px 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #05467d;
 }
 .copy{
     color: #fff;
@@ -623,9 +629,7 @@ ul.bercum {
     margin-top: 30px;
 }
 .wp-post-image{
-    width: 100%;
-    height: :auto;
-    min-height: 450px;
+    max-width: 100%;
 }
 .title h2{
     font-size: 18px;
@@ -744,8 +748,8 @@ span.current {
     font-size: 15px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-    background: #D63240 !important;
-    color: #fff !important;
+    background: transparent !important;
+    color: #D63240 !important;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     border-color: #4285F4;
@@ -797,6 +801,7 @@ span.current {
 }
 .wpb_wrapper{
     border: 1px solid #eee; 
+    background: #f2f2f2;
 }
 #subiz_wrapper{
     width: 280px;
@@ -805,6 +810,9 @@ span.current {
     bottom: 0px;
     position: fixed;
     z-index: 9999999;
+}
+.thumbnail{
+    background: transparent;
 }
 .button_chat_offline {
     padding: 3px 0 6px;
@@ -1012,9 +1020,8 @@ div#toc_container ul li a:hover{
     right: 0;
     padding:0 !important;
 }
-.header, nav{
+.header{
     margin: 0;
-    background-color: #2f2f2f !important;
 }
 #toc_container a {
     font-size: 15px;
@@ -1044,20 +1051,21 @@ div.wpcf7-response-output {
     margin: 5px 0px 0px 0px;
     padding: 0.2em 1em;
 }
-.list-apartment .slick-arrow, .slider-for .slick-arrow{
+.list-apartment .slick-arrow{
     width: 30px;
     height: 30px;
     top: -10px;
     opacity: 0.7;
 }
-.list-apartment .slick-prev, .slider-for .slick-prev{
-    right: 38px;
-    background: url('../../assets/images/prev.png') no-repeat;
+.list-apartment .slick-prev{
+   right: 38px;
+    background: url(../../assets/images/prev.png) #fff no-repeat center center;
     left: inherit;
+        margin-right: 5px;
 }
-.list-apartment .slick-next, .slider-for .slick-next{
+.list-apartment .slick-next{
     right: 8px;
-    background: url('../../assets/images/next.png') no-repeat;
+    background: url('../../assets/images/next.png') #fff no-repeat center center;
 }
 .list-apartment .slick-arrow:hover, .slider-for .slick-arrow:hover{
     opacity: 1;
@@ -1074,7 +1082,7 @@ div.wpcf7-response-output {
 }
 .item-images img{
     padding: 10px;
-    }
+}
 .property-featured-image{
     cursor: pointer;
 }
@@ -1133,7 +1141,7 @@ a:focus, a:hover{
     padding: 10px;
 }
 .ty{
-        color: #427FED !important;
+    color: #427FED !important;
 }
 .info{
     font-size: 16px;
@@ -1141,101 +1149,67 @@ a:focus, a:hover{
 .form-send{
     font-weight: bold;
 }
-.custom-logo{
-    width: 80px;
-    height: auto;
+
+.khachhang .slick-next{
+    right: -40px;
+    background: url(../../assets/images/before_right.png) no-repeat;
 }
-.loingo_bg {
-    background: url(../images/bg_loingo.png) no-repeat center top;
-    min-height: 340px;
+.khachhang{
+    background: #f2f2f2;
+    padding: 20px 0;
 }
-.list_loingo {
-    color: white;
-    text-align: center;
-    max-width: 830px;
-    margin: 0 auto;
-    font-family: Arial;
-    font-size: 16px;
-    text-align: center;
+
+.khachhang .slick-prev{
+    background: url(../../assets/images/before_left.png) no-repeat;
+    left: -40px;
+    z-index: 2;
 }
-.loingo .list_loingo {
-    line-height: 18px;
-    margin-top: 10px;
+.khachhang .slick-arrow{
+    margin-top:-10px;
 }
-.list_loingo span {
-    color: #ee4041;
-}   
-.loingo .caption-auto span {
-    
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Arial';
+.footer_above {
+    height: 50px;
+    background: #df781b;
+    line-height: 50px;
+}
+.company_wr a, .baogia a, .download a {
     color: #fff;
-    margin-bottom: 5px;
-}
-.caption-auto{
-    text-align: center;
-}
-.loingo{
-    margin: 40px;
-}
-.duan-bg {
-    background: url(../images/bg_duantieubieu.png) no-repeat center top;
-    margin-bottom: 20px;
-}
-.product-hot {
-    margin: 0 !important;
-}
-.caption-auto {
-    text-align: center;
-    margin-top: 30px;
-}
-.caption-auto .do {
-    color: #ee4041;
-}
-.list-duan {
-    margin-top: 30px;
-}
-.product-img1 img {
-    width: 100%;
-    height: auto;
-}
-.title-duan a {
-    color: #565656;
-    font-size: 14px;
-    font-family: 'Arial';
-    margin-top: 10px;
-    margin-bottom: 10px;
-    float: left;
+    font-size: 16px;
     text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
 }
-.caption-auto span {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Arial';
+.baogia a {
+    background: url(../../assets/images/baogia_icon1.png) no-repeat left center;
+    padding-left: 40px;
+    display: block;
 }
-.footer-area {
-    background: url(../images/map.png) center;
-    background-color: #191919;
-    color: #FFF;
+.download a {
+    background: url(../../assets/images/download_bg.png) no-repeat left center;
+    padding-left: 44px;
+    height: 50px;
+    display: block;
 }
-#goTop {
-    bottom: 50px;
-    cursor: pointer;
-    display: none;
-    height: 35px;
-    position: fixed;
-    right: 50px;
-    width: 44px;
-    z-index: 1000;
+.slider-for .slick-next{
+    position: absolute;
+    left: 0;
+    background: url(../../assets/images/prev.png) #EAEAEA no-repeat center center;
 }
-.aboutus {
-    padding-top: 20px;
+.slider-for .slick-prev{
+  position: absolute;
+  right: 0;
+  background: url(../../assets/images/next.png) #EAEAEA no-repeat center center;
+  left: inherit;
+  z-index: 2;
 }
-.fance-page1 {
-    padding-top: 20px;
+.slider .slick-prev{
+    background: url(../../assets/images/ic_prev.png);
+    width: 39px;
+    height: 64px;
+    left: 30px;
+    z-index: 2;
+}
+.slider .slick-next{
+    background: url(../../assets/images/ic_next.png);
+    width: 39px;
+    height: 64px;
+        right: 30px;
 }

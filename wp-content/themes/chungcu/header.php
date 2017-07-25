@@ -46,9 +46,6 @@
 	<header>
 		<div class="header-top">
 			<div class="container">
-				<div class="contact fl">
-					<span class="mail"><a href="mailto:vuongviet258@gmail.com"><i class="fa fa-envelope"></i>&nbsp;banggiachungcuhn@gmail.com</a></span>
-				</div>
 				<div class="search fr">
 					<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="search-icon fl"><input type="search" class="search-field input-search" placeholder="Từ khóa tìm kiếm" name="s" /></div></form>
 					<div class="social">
@@ -70,9 +67,9 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">
+							
 								<?php twentysixteen_the_custom_logo(array('class'=>'navbar-brand')); ?>
-							</a>
+							
 						</div>
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">

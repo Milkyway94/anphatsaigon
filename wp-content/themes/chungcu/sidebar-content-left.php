@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'sidebar-right' )) {
 		<span class="heading-icon">
 			<i class="fa fa-caret-right icon-design"></i>
 		</span>
-		Dự án hot
+		Sản phẩm nổi bật
 	</h2>
 	<div class="item-project">
 		<?php 

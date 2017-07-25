@@ -1,15 +1,101 @@
 /*
-Theme Name: Chung cư
-Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: Thành
+Theme Name: Twenty Seventeen
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: the WordPress team
 Author URI: https://wordpress.org/
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 1.3
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
-Text Domain: Thành dz
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.wrapper {
+    display: block;
+    width: 980px;
+    margin: auto;
+    position: relative;
+    color: #fff;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.h_iframe {
+    position: relative;
+}
+.h_iframe .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.h_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.about{
+	margin-bottom: 30px;
+}
+.aboutus h1{
+	    color: #ee4041;
+    font-size: 25px;
+    font-weight: bold;
+}
+.aboutus p{
+	    font-size: 17px;
+}
+@media (min-width: 1200px){
+.col-ht-9{
+    width:80%;	
+}
+.col-ht-3{
+width:20%;	
+}
+}
+.info,.nav>li>a {
+font-size:14px;
+}
+/*Update 06/07/2017*/
+.about {
+    margin-bottom: 0px;
+}
+.custom-logo{
+    height: 60px !important;
+    width: auto !important;
+}
+@media (min-width: 768px){
+    .navbar {
+    padding: 10px 0;
+    transition: 0.3s;
+}
+}
+.footer_above {
+	 margin-top: 30px;
+    height: 50px;
+    background: #df781b;
+    line-height: 50px;
+}
+.company_wr a, .baogia a, .download a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.baogia a {
+    background: url(../../assets/images/baogia_icon1.png) no-repeat left center;
+    padding-left: 40px;
+    display: block;
+}
+.download a {
+    background: url(../../assets/images/download_bg.png) no-repeat left center;
+    padding-left: 44px;
+    height: 50px;
+    display: block;
+}
